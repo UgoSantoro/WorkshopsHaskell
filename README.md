@@ -130,3 +130,26 @@ False
 *Main> ex7 [12, 35, 123, 654, 42, 0] 42
 True
 ```
+
+## Ex 8 : Command interpreter
+For this exercice, you have to complete a function which will read the standard input, print the given input, then restart the function
+```
+doSomething :: String -> IO()
+doSomething x = putStrLn x
+
+ex8 :: IO()
+ex8 = do
+    putStr "> "
+    {- Complete function here -}
+    doSomething x
+    {- Complete function here -}
+```
+ghci interpreter result :
+```
+*Main> ex8
+> The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog
+> Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet
+>
+```
